@@ -1,0 +1,30 @@
+<h1>Refuelling Information Listing</h1>
+<%= link_to 'New Refuel', new_refuel_path %>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Driver</th>
+    <th>Vehicle</th>
+    <th>Odometer Reading</th>
+    <th>Refuel Location</th>
+    <th>Litters of Fuel</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @refuels.each do |refuel| %>
+    <tr>
+      <td><%= refuel.date %></td>
+      <td><%= refuel.driver %></td>
+      <td><%= refuel.vehicle %></td>
+      <td><%= refuel.odometer_reading %></td>
+      <td><%= refuel.refuel_location %></td>
+      <td><%= refuel.fuel_litters %></td>
+      <td><%= link_to 'Show', refuel_path(refuel) %></td>
+      <td><%= link_to 'Edit', edit_refuel_path(refuel) %></td>
+      <td><%= link_to 'Delete', refuel_path(refuel), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>

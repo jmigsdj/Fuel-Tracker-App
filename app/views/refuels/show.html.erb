@@ -1,0 +1,32 @@
+<p>
+  <strong>Date:</strong>
+  <%= @refuel.date %>
+</p>
+
+<p>
+  <strong>Driver:</strong>
+  <%= @refuel.driver %>
+</p>
+
+<p>
+  <strong>Vehicle:</strong>
+  <%= @refuel.vehicle %>
+</p>
+
+<p>
+  <strong>Odometer Reading:</strong>
+  <%= @refuel.odometer_reading %>
+</p>
+
+<p>
+  <strong>Refuel Location:</strong>
+  <%= @refuel.refuel_location %>
+</p>
+
+<p>
+  <strong>Litters of Fuel:</strong>
+  <%= @refuel.fuel_litters %>
+</p>
+
+<%= link_to 'Back', refuels_path %> |
+<%= link_to 'Edit', edit_refuel_path(@refuel) %>
