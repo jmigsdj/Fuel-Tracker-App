@@ -1,4 +1,9 @@
-<h1>Fuel Tracker 1.0</h1>
-<p>Refuel now!</p>
-<%= link_to 'New Refuel', new_refuel_path %>
-<%= link_to 'Refuelling Information', refuels_path %>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Fuel Tracker 1.0</h1>
+    <p class="lead">Refuel now!</p>
+  </div>
+</div>
+
+<%= link_to 'New Refuel', new_refuel_path, class: "btn btn-primary btn-lg" %>
+<%= link_to 'Refuelling Information', refuels_path, class: "btn btn-secondary btn-lg" %>

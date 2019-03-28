@@ -1,9 +1,9 @@
+<% if user_signed_in? %>
+  <%= link_to 'Back', refuels_path, class: "btn btn-sm btn-secondary"%>
+<% else %>
+  <%= link_to 'Back', home_index_path, class: "btn btn-sm btn-secondary"%>
+<% end %>
+
 <h1>New Refuel</h1>
 
 <%= render 'form' %>
-
-<% if user_signed_in? %>
-  <%= link_to 'Back', refuels_path %>
-<% else %>
-  <%= link_to 'Back', home_index_path %>
-<% end %>

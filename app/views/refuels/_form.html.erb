@@ -13,38 +13,38 @@
     </div>
   <% end %>
 
-  <p>
+  <div class="form-group"> 
     <%= form.label :date %>
-    <%= form.date_field :date%>  
-  </p>
+    <%= form.date_field :date, class: "form-control" %>  
+  </div>
 
-  <p>
+  <div class="form-group"> 
     <%= form.label :driver %>
-    <%= form.text_field :driver%>  
-  </p>
+    <%= form.text_field :driver, class: "form-control" %>  
+  </div>
 
-  <p>
+  <div class="form-group"> 
     <%= form.label :vehicle %>
-    <%= form.text_field :vehicle%>  
-  </p>
+    <%= form.text_field :vehicle, class: "form-control" %>  
+  </div>
 
-  <p>
+  <div class="form-group"> 
     <%= form.label :odometer_reading %>
-    <%= form.number_field :odometer_reading%>  
-  </p>
+    <%= form.number_field :odometer_reading, class: "form-control" %>  
+  </div>
 
-  <p>
+  <div class="form-group"> 
     <%= form.label :refuel_location %>
-    <%= form.text_field :refuel_location%>  
-  </p>
+    <%= form.text_field :refuel_location, class: "form-control" %>  
+  </div>
 
-  <p>
+  <div class="form-group"> 
     <%= label_tag(:fuel_litters, 'Litters of Fuel') %>
-    <%= form.number_field :fuel_litters, step: 'any' %>  
-  </p>
+    <%= form.number_field :fuel_litters, class: "form-control", step: 'any' %>  
+  </div>
 
   <p>
-    <%= form.submit %>
+    <%= form.submit class: "btn btn-success float-right" %>
   </p>
 
 <% end %>

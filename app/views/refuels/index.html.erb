@@ -1,8 +1,8 @@
 <h1>Refuelling Information Listing</h1>
-<%= link_to 'New Refuel', new_refuel_path %>
+<%= link_to 'New Refuel', new_refuel_path, class: "btn btn-primary" %>
 <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-
-<table>
+<hr>
+<table class="table table-dark">
   <tr>
     <th>Date</th>
     <th>Driver</th>

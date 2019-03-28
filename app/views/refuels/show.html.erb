@@ -1,3 +1,5 @@
+<h1>Refuel Details</h1>
+
 <p>
   <strong>Date:</strong>
   <%= @refuel.date %>
@@ -28,5 +30,10 @@
   <%= @refuel.fuel_litters %>
 </p>
 
-<%= link_to 'Back', refuels_path %> |
-<%= link_to 'Edit', edit_refuel_path(@refuel) %>
+<% if user_signed_in? %>
+  <%= link_to 'Back', refuels_path, class: "btn btn-sm btn-secondary"%>
+  <%= link_to 'Edit', edit_refuel_path(@refuel), class: "btn btn-sm btn-primary" %>
+
+<% else %>
+  <%= link_to 'Back', home_index_path, class: "btn btn-sm btn-secondary"%>
+<% end %>
