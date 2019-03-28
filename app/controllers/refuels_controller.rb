@@ -1,4 +1,6 @@
 class RefuelsController < ApplicationController
+  before_action :authenticate_user!, :except => [:show, :new, :create]
+
   def index
     @refuels = Refuel.all
   end
