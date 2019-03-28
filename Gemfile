@@ -28,6 +28,10 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 # Devise for Authentication
 gem 'devise'
+# Bootstrap
+gem 'bootstrap', '~> 4.0.0'
+# Jquery
+gem 'jquery-rails'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
